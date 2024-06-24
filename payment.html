@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Home</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial;
+        overflow-x: hidden;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .active {
+        background-color: #04aa6d;
+        color: white;
+      }
+
+      .topnav .icon {
+        display: none;
+      }
+
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+
+      .dropdown .dropbtn {
+        font-size: 17px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .topnav a:hover,
+      .dropdown:hover .dropbtn {
+        background-color: #555;
+        color: white;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      @media screen and (max-width: 600px) {
+        .topnav a:not(:first-child),
+        .dropdown .dropbtn {
+          display: none;
+        }
+        .topnav a.icon {
+          float: right;
+          display: block;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .topnav.responsive {
+          position: relative;
+        }
+        .topnav.responsive .icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .topnav.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+        .topnav.responsive .dropdown {
+          float: none;
+        }
+        .topnav.responsive .dropdown-content {
+          position: relative;
+        }
+        .topnav.responsive .dropdown .dropbtn {
+          display: block;
+          width: 100%;
+          text-align: left;
+        }
+      }
+      * {
+  box-sizing: border-box;
+}
+.first {
+  width: 100%;
+  height: 35px;
+  background-color: azure;
+  margin-bottom: 0%;
+}
+.button {
+  text-decoration: none;
+  text-align: center;
+  float: right;
+  background-color: azure;
+  color: black;
+  display: inline-block;
+  border: 1%;
+  margin-right: 2%;
+}
+.sec {
+  background-color: blanchedalmond;
+}
+input[type="search"] {
+  border: 1.5px solid black;
+  margin-right: 0%;
+}
+.sec2 {
+  float: right;
+}
+.third {
+  background-color: lightblue;
+}
+.t1 {
+  background-color: lightblue;
+  border: 2px solid lightblue;
+  margin-left: 0%;
+  height: 40px;
+}
+.t1:hover {
+  background-color: lightgreen;
+}
+marquee {
+  background-color: yellow;
+  height: 25px;
+}
+.f {
+  height: 700px;
+  background-image: url("./images/n2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.in {
+  float: left;
+  width: 20%;
+  border: 2px solid white;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 3%;
+  margin-right: 2%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.out:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  float: left;
+  width: 33.3%;
+  background-color: black;
+  color: white;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+img {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+.in a {
+  text-decoration: none;
+  color: black;
+}
+.column a {
+  text-decoration: none;
+  color: white;
+}
+.column a:hover {
+  color: yellow;
+}
+.first a {
+  text-decoration: none;
+  color: black;
+}
+@media screen and max-width(600px) {
+  .first {
+    width: 100%;
+  }
+  .column {
+    width: 100%;
+  }
+  .in {
+    width: 100%;
+  }
+}
+
+.wrapper {
+  visibility: visible;
+  background-color: #fff;
+  width: 500px;
+  padding: 25px;
+  margin: 25px auto 0;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+.wrapper h2 {
+  background-color: #fcfcfc;
+  color: #7ed321;
+  font-size: 24px;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px dotted #333;
+}
+h4 {
+  padding-bottom: 5px;
+  color: #7ed321;
+}
+.input-group {
+  margin-bottom: 8px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0;
+}
+.input-box {
+  width: 100%;
+  margin-right: 12px;
+  position: relative;
+}
+.input-box:last-child {
+  margin-right: 0;
+}
+.name {
+  padding: 14px 10px 14px 50px;
+  width: 100%;
+  background-color: #fcfcfc;
+  border: 1px solid #00000033;
+  outline: none;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  border-radius: 3px;
+  color: #333;
+}
+.name:focus,
+.dob:focus {
+  -webkit-box-shadow: 0 0 2px 1px #7ed32180;
+  -moz-box-shadow: 0 0 2px 1px #7ed32180;
+  box-shadow: 0 0 2px 1px #7ed32180;
+  border: 1px solid #7ed321;
+}
+.input-box .icon {
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  color: #333;
+  background-color: #f1f1f1;
+  border-radius: 2px 0 0 2px;
+  transition: 0.3s;
+  font-size: 20px;
+  pointer-events: none;
+  border: 1px solid #00000033;
+  border-right: none;
+}
+.name:focus + .icon {
+  background-color: #7ed321;
+  color: #fff;
+  border-right: 1px solid #7ed321;
+  border: none;
+  transition: 1s;
+}
+.dob {
+  width: 30%;
+  padding: 14px;
+  text-align: center;
+  background-color: #fcfcfc;
+  transition: 0.3s;
+  outline: none;
+  border: 1px solid #c0bfbf;
+  border-radius: 3px;
+}
+.radio {
+  display: none;
+}
+.input-box label {
+  width: 50%;
+  padding: 13px;
+  background-color: #fcfcfc;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  border: 1px solid #c0bfbf;
+}
+.input-box label:first-of-type {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-right: none;
+}
+.input-box label:last-of-type {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.radio:checked + label {
+  background-color: #7ed321;
+  color: #fff;
+  transition: 0.5s;
+}
+.input-box select {
+  display: inline-block;
+  width: 50%;
+  padding: 12px;
+  background-color: #fcfcfc;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #c0bfbf;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.input-box select:focus {
+  background-color: #7ed321;
+  color: #fff;
+  text-align: center;
+}
+.buton {
+  width: 100%;
+  background: transparent;
+  border: none;
+  background: #7ed321;
+  color: #fff;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: all 0.35s ease;
+}
+.buton:hover {
+  cursor: pointer;
+  background: #5eb105;
+}
+
+#confirm {
+  position: absolute;
+  top: 40vh;
+  visibility: hidden;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+.box {
+  width: 50vw;
+  height: 90vh;
+  background-repeat: no-repeat;
+  display: flex;
+  background-size: cover;
+  background-image: url(./images/115579-check.gif);
+  justify-content: center;
+  /* align-items: ; */
+}
+
+.box h1 {
+  position: absolute;
+  top: 15vh;
+}
+
+/* .footer {
+  width: 100vw;
+  position: absolute;
+  top: 180vh;
+} */
+    </style>
+  </head>
+  <body>
+    <div class="first">
+      <button class="button">
+        <a href="./sign in.html"
+          ><span class="material-symbols-outlined"> login </span>Sign in</a
+        >
+      </button>
+      <button class="button">
+        <a href="./login.html"
+          ><span class="material-symbols-outlined"> login </span>Log in</a
+        >
+      </button>
+    </div>
+    <div class="sec">
+      <h4><center>CAMPUS BOOK MART</center></h4>
+      <a href="" class="sec2"
+        ><span class="material-symbols-outlined">shopping_cart</span></a
+      >
+      <form class="sec1">
+        <center>
+          <input
+            type="search"
+            placeholder="Search"
+            class="material-symbols-outlined"
+          />
+        </center>
+      </form>
+    </div>
+    <div class="topnav" id="myTopnav">
+      <a href="./index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Stationaries
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="./book.html">Books</a>
+          <a href="./penpencil.php">Pen/Pencil</a>
+          <a href="./calculator.php">Calculator</a>
+          <a href="./others.php">Others</a>
+        </div>
+      </div>
+      <a href="#contact">Privacy Policy</a>
+      <a href="#about">About</a>
+      <a
+        href="javascript:void(0);"
+        style="font-size: 15px"
+        class="icon"
+        onclick="myFunction()"
+        >&#9776;</a
+      >
+    </div>
+    <marquee
+      >Your search for quality books and stationaries ends here..</marquee
+    >
+    <!-- 
+
+yaha pe pahe ko empty rakhna hai aur kuch display karna hai
+samjha 
+
+
+  -->
+
+  <div class="wrapper" id ="wrapper">
+    <h2>Payment Form</h2>
+    <form method="POST">
+        <h4>Account</h4>
+        <div class="input-group">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" required class="name">
+                <i class="fa fa-user icon"></i>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Nick Name" required class="name">
+                <i class="fa fa-user icon"></i>
+            </div>
+        </div>
+        <div class="input-group">
+            <div class="input-box">
+                <input type="email" placeholder="Email Adress" required class="name">
+                <i class="fa fa-envelope icon"></i>
+            </div>
+        </div>
+        <div class="input-group">
+            <div class="input-box">
+                <h4> Date of Birth</h4>
+                <input type="text" placeholder="DD" class="dob">
+                <input type="text" placeholder="MM" class="dob">
+                <input type="text" placeholder="YYYY" class="dob">
+            </div>
+            <div class="input-box">
+                <h4> Gender</h4>
+                <input type="radio" id="b1" name="gendar" checked class="radio">
+                <label for="b1">Male</label>
+                <input type="radio" id="b2" name="gendar" class="radio">
+                <label for="b2">Female</label>
+            </div>
+        </div>
+        <div class="input-group">
+            <div class="input-box">
+                <h4>Payment Details</h4>
+                <input type="radio" name="pay" id="bc1" checked class="radio">
+                <label for="bc1"><span><i class="fa fa-cc-visa"></i> Credit Card</span></label>
+                <input type="radio" name="pay" id="bc2" class="radio">
+                <label for="bc2"><span><i class="fa fa-cc-paypal"></i> UPI</span></label>
+            </div>
+        </div>
+        <div class="input-group">
+            <div class="input-box">
+                <input type="tel" placeholder="Card Number" required class="name">
+                <i class="fa fa-credit-card icon"></i>
+            </div>
+        </div>
+        <div class="input-group">
+            <div class="input-box">
+                <input type="tel" placeholder="Card CVC" required class="name">
+                <i class="fa fa-user icon"></i>
+            </div>
+            <div class="input-box">
+                <select>
+                    <option>01 jun</option>
+                    <option>02 jun</option>
+                    <option>03 jun</option>
+                </select>
+                <select>
+                    <option>2020</option>
+                    <option>2021</option>
+                    <option>2022</option>
+                </select>
+            </div>
+        </div>
+        <div class="input-group">
+            <div class="input-box">
+                <button class="buton" type="submit" onclick="paypage();" >PAY NOW</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div id="confirm">
+<div class="box">
+  <h1>Payment Confirmed</h1>
+</div></div>
+    <div class="footer">
+      <div class="column">
+        <h5>INFORMATIONS</h5>
+        <h6>Privacy Policy</h6>
+        <h6>Conditions of Use</h6>
+        <h6>Contact Us</h6>
+      </div>
+      <div class="column">
+        <h5>MY ACCOUNT</h5>
+        <h6>Order History</h6>
+        <h6>Change Password</h6>
+        <a href="./login.html"><h6>Create Account</h6></a>
+      </div>
+      <div class="column">
+        <h5>CUSTOMER CARE</h5>
+        <a href="./brands.html"><h6>Brands</h6></a>
+        <h6>Resellers</h6>
+        <h6>Support Center Helpdisk</h6>
+      </div>
+    </div></div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+
+
+      function paypage()
+      {
+        document.getElementById("wrapper").style.visibility="hidden";
+        document.getElementById("confirm").style.visibility="visible";
+      }
+    </script>
+
+
+
+  </body>
+</html>

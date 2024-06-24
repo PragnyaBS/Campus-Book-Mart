@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+.first{
+    width: 100%;
+    height:35px;
+    background-color: azure;
+    margin-bottom: 0%;
+
+}
+.sec{
+    background-color: blanchedalmond;
+    height: 80px;
+}
+input[type=search]{
+    border: 1.5px solid black;
+    margin-right: 0%;
+}
+.sec2{
+    float: right;
+}
+.third{
+    background-color: lightblue;
+}
+.t1{
+    background-color: lightblue;
+    border: 2px solid lightblue;
+    margin-left: 0%;
+    height: 40px;
+}
+.t1:hover{
+    background-color: lightgreen;
+}
+marquee{
+    background-color: yellow;
+    height: 25px;
+}
+.ff{
+    border: 2px double black;
+    margin:10% 20%;
+    padding: 5%;
+}
+input{
+    width: 100%;
+}
+.but{
+    border: 2px solid black;
+}
+.but:hover{
+    background-color: black;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.column{
+    float:left;
+    width: 33.3%;
+    background-color: black;
+    color: white;
+}
+.column a{
+    text-decoration: none;
+    color: white;
+}
+.column a:hover{
+    color: yellow;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and max-width(600px) {
+    .first{
+        width:100%;
+    }
+    .column{
+        width: 100%;
+    }
+}
+#login-error-msg-holder {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  #login-error-msg {
+    width: 23%;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #8a0000;
+    border: 1px solid #8a0000;
+    background-color: #e58f8f;
+    opacity: 0;
+  }
+  
+  #error-msg-second-line {
+    display: block;
+  }
+  
+  #login-form {
+    align-self: flex-start;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .login-form-field::placeholder {
+    color: #3a3a3a;
+  }
+  
+  .login-form-field {
+    border: none;
+    border-bottom: 1px solid #3a3a3a;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: none;
+    padding: 0px 0px 5px 5px;
+  }
+  
+  #login-form-submit {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: #3a3a3a;
+    cursor: pointer;
+    outline: none;
+  }

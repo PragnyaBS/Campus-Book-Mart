@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+}
+.first{
+    width: 100%;
+    height:35px;
+    background-color: azure;
+    margin-bottom: 0%;
+
+}
+.button{
+    text-decoration: none;
+    text-align: center;
+    float: right;
+    background-color: azure;
+    color: black;
+    display: inline-block;
+    border: 1%;
+    margin-right: 2%;
+}
+.sec{
+    background-color: blanchedalmond;
+}
+input[type=search]{
+    border: 1.5px solid black;
+    margin-right: 0%;
+}
+.sec2{
+    float: right;
+}
+.third{
+    background-color: lightblue;
+}
+.t1{
+    background-color: lightblue;
+    border: 2px solid lightblue;
+    margin-left: 0%;
+    height: 40px;
+}
+.t1:hover{
+    background-color: lightgreen;
+}
+marquee{
+    background-color: yellow;
+    height: 25px;
+}
+.f{
+    height: 700px;
+    background-image:url("./images/n2.jpg");
+    background-attachment:fixed ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.in{
+    float: left;
+    width: 20%;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left:3% ;
+    margin-right: 2%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.out:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.column{
+    float:left;
+    width: 33.3%;
+    background-color: black;
+    color: white;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+img{
+    position: relative;
+    width:100%;
+    height:200px;
+}
+.in a{
+    text-decoration: none;
+    color: black;
+}
+.column a{
+    text-decoration: none;
+    color: white;
+}
+.column a:hover{
+    color: yellow;
+}
+.first a{
+    text-decoration: none;
+    color: black;
+}
+.in button{
+    width: 100%;
+    background-color: black; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+@media screen and max-width(600px) {
+    .first{
+        width:100%;
+    }
+    .column{
+        width: 100%;
+    }
+    .in{
+        width: 100%;
+    }
+}
